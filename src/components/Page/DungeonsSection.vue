@@ -1,3 +1,12 @@
+<script>
+    import CreationView from '../Content/CreationView.vue';
+    export default {
+        components : {
+            CreationView
+        }
+    }
+</script>
+
 <template>
-    <p>Je m'appelle Océane</p>
+    <creation-view/>
 </template>

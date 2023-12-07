@@ -1,0 +1,31 @@
+{
+    "races": [
+        {
+            "name": "Elfe",
+            "lifespan": 750,
+            "typicalNames": [
+                "Legolas", "Aedrun", "Elmir"
+            ]
+        },
+        {
+            "name": "Orc",
+            "lifespan": 60,
+            "typicalNames": [
+                "Gruik", "Grumgrum", "Pigtrek"
+            ]
+        }
+    ],
+    "classes": [
+        
+
+    ],
+    "backgrounds": [
+
+    ],
+    "default": [
+
+    ],
+    "baubles": [
+
+    ]
+}

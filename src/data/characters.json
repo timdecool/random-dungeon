@@ -5,14 +5,16 @@
             "lifespan": 750,
             "typicalNames": [
                 "Legolas", "Aedrun", "Elmir"
-            ]
+            ],
+            "src": ""
         },
         {
             "name": "Orc",
             "lifespan": 60,
             "typicalNames": [
                 "Gruik", "Grumgrum", "Pigtrek"
-            ]
+            ],
+            "src": ""
         }
     ],
     "classes": [

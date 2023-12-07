@@ -1,3 +1,12 @@
+<script>
+    import CreationView from '../Content/CreationView.vue';
+    export default {
+        components : {
+            CreationView
+        }
+    }
+</script>
+
 <template>
-    <h1>Donjons</h1>
+    <creation-view/>
 </template>

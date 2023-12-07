@@ -1,5 +1,6 @@
 <script setup>
     import MainNav from '@/components/Layout/MainNav.vue'
+    import FooterView from '@/components/Layout/FooterView.vue'
     
 </script>
 
@@ -14,7 +15,9 @@
             <slot></slot>
         </main>
         <footer>
-            <slot name="footer"></slot>
+            <slot name="footer">
+                <footer-view />
+            </slot>
         </footer>
     </div>
 </template>

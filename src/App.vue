@@ -17,6 +17,7 @@ import MainLayout from '@/components/Layout/MainLayout.vue'
   text-decoration: none;
   color: #ffffff;
   font-size: 24px;
+  font-family: 'MedievalSharp', cursive;
 }
 
 a:hover {
@@ -26,6 +27,7 @@ a:hover {
 body {
   background-color: rgb(59, 56, 62) !important;
   color: #ffff;
-  font-family: 'MedievalSharp', cursive;
+  
+  
 }
 </style>

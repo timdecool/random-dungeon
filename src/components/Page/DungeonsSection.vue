@@ -1,3 +1,3 @@
 <template>
-    <h1>Donjons</h1>
+    <p>Je m'appelle Océane</p>
 </template>

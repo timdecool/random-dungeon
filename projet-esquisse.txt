@@ -1,0 +1,49 @@
+SITE RPG DE FOU
+
+Menu Personnages
+--> Dans ce menu personnage, on aurait une carte personnage par personnage qui est dans le local storage 
+--> On aurait un bouton détail pour ouvrir une page spécifique avec pleins de détails aléatoires
+--> On aurait un autre bouton pour créer un nouveau personnage
+
+Menu création de persos
+--> 1ère page prénom & classe
+--> Plusieurs étapes avec à chaque fois 3 options random pour race, background, trait notable, défaut, babiole, etc.
+--> Caractéristiques : tirées au hasard, mais tu peux re-roll une fois
+--> Validation
+
+Menu Création de Donjons
+--> Plusieurs étapes avec à chaque fois 3 options random pour :
+- Lieu
+- Méchant
+- Niveau de difficulté
+- Nombre de salles
+- Pour chaque salle, le décor, l'épreuve, le loot
+- A la fin, un récap avec "valider" ou "modifier" et la possibilité d'imprimer en pdf
+
+Main Layout
+Header --> Personnages - Donjons - Jouer
+Main -->
+	Galerie -->
+		Carte
+		Ajouter
+	Création -->
+		Options
+		Barre de progression
+Footer -->
+	Océane & Tim les bests y a quoi(c)
+
+STORES
+	characters
+	dungeons
+
+JSON
+	character-creation
+[
+	race: [
+		{
+
+		}
+	]
+
+
+	dungeon-creation

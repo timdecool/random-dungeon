@@ -4,9 +4,10 @@ import { RouterLink } from 'vue-router'
 </script>
 
 <template>
-    <nav>
-        <RouterLink to="/">Accueil</RouterLink>
-        <RouterLink to="/characters">Personnages</RouterLink>
-        <RouterLink to="/dungeons">Donjons</RouterLink>
+    <nav class="d-flex align-items-center justify-content-center">
+        <RouterLink to="/"><img width="45vh" src="/favicon.png" alt=""></RouterLink>
+        <RouterLink to="/" class="navPad">Accueil</RouterLink>
+        <RouterLink to="/characters" class="navPad">Personnages</RouterLink>
+        <RouterLink to="/dungeons" class="navPad">Donjons</RouterLink>
     </nav>
 </template>

@@ -1,33 +1,216 @@
 {
-    "races": [
+    "ascendancies": [
         {
+            "id": 1,
             "name": "Elfe",
             "lifespan": 750,
             "typicalNames": [
-                "Legolas", "Aedrun", "Elmir"
+                "Rolim", "Fylson", "Urdusin","Kelvhan","Erlan","Tassarion","Aien","Vulmon","Kuskyn","Alred","Elen","Goren","Elaith","Nieven","Ilphas","Amrynn","Micaiah","Alanis","Cyran","Bemere","Gaelin"
             ],
             "src": ""
         },
         {
+            "id":2,
             "name": "Orc",
             "lifespan": 60,
             "typicalNames": [
-                "Gruik", "Grumgrum", "Pigtrek"
+                "Klapdud","Buramog","Woggha","Snugug","Shamar","Romarod","Tidgug","Fudhagh","Korgulg","Routhu","Xaguk","Zalthu","Nargulg","Borug","Sudagog","Magra","Dul","Xagok","Urzul","Yazgash","Mazoga","Bum","Ragash","Umog","Ushat","Gonk"
+            ],
+            "src": ""
+        },
+        {
+            "id": 3,
+            "name": "Halfelin",
+            "lifespan": 90,
+            "typicalNames": [
+                "Erwan", "Garder", "Belser","Zalumo", "Davwan","Meremin","Falrin","Elyver","Falzin","Jayrana","Yophina","Breni","Belcaryn","Elidrey","Horfer","Merry","Herugar","Moro","Gundobad","Clothair","Amanda","Taryn","Madeline","Wiseman","Bavo","Doderic"
+            ],
+            "src": ""
+        },
+        {
+            "id": 4,
+            "name": "Nain",
+            "lifespan": 200,
+            "typicalNames" : [
+                "Mukhal","Domik","Throrunli","Dorarmath","Kakhoug","Thelam","Duribun","Turfud","Barirback","Nuraggor","Assogith","Kronabela","Elsibela","Elrralsia","Kossetalyn","Umalin","Groteala","Kuvebelyn","Katgroubo"
             ],
             "src": ""
         }
     ],
     "classes": [
-        
-
+        {
+            "id": 1,
+            "name": "Guerrier",
+            "mainStat": "Force",
+            "feats": [
+                "Déluge de coups","Coup puissant","Feinte"
+            ],
+            "weapons": [
+                "Épée","Masse","Marteau","Lance","Faux","Fléau"
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Voleur",
+            "mainStat": "Dextérité",
+            "feats": [
+                "Attaque sournoise","Maîtrise des poisons","Dissimulation"
+            ],
+            "weapons": [
+                "Dague","Arbalète","Arc","Bâton","Shurikens","Couteaux de lancer","Épée courte","Fouet"
+            ]
+        },        
+        {
+            "id": 3,
+            "name": "Magicien",
+            "mainStat": "Intelligence",
+            "feats": [
+                "Boule de feu","Charme","Sommeil",""
+            ],
+            "weapons": [
+                "Baguette","Bâton magique", "Dague","Grimoire"
+            ]
+        }, 
+        {
+            "id": 4,
+            "name": "Prêtre",
+            "mainStat": "Sagesse",
+            "feats": [
+                "Soins","Destruction des morts-vivants","Lumière divine"
+            ],
+            "weapons": [
+                "Épée","Masse","Marteau","Lance","Faux","Fléau"
+            ]
+        }
     ],
     "backgrounds": [
-
+        {
+            "id": 1,
+            "name": "Enfant des rues"
+        },
+        {
+            "id": 2,
+            "name": "Artisan de guilde"
+        },
+        {
+            "id": 3,
+            "name": "Artiste"
+        },
+        {
+            "id": 4,
+            "name": "Charlatan"
+        },
+        {
+            "id": 5,
+            "name": "Criminel"
+        },
+        {
+            "id": 6,
+            "name": "Ermite"
+        },
+        {
+            "id": 7,
+            "name": "Héros du peuple"
+        },
+        {
+            "id": 8,
+            "name": "Marin"
+        },
+        {
+            "id": 9,
+            "name": "Noble"
+        },
+        {
+            "id": 10,
+            "name": "Sage"
+        },
+        {
+            "id": 11,
+            "name": "Sauvageon"
+        },
+        {
+            "id": 12,
+            "name": "Soldat"
+        },
+        {
+            "id": 13,
+            "name": "Chasseur de primes"
+        },
+        {
+            "id": 14,
+            "name": "Hanté"
+        },
+        {
+            "id": 15,
+            "name": "Voyageur"
+        },
+        {
+            "id": 16,
+            "name": "Idiot du village"
+        },
+        {
+            "id": 17,
+            "name": "Captif"
+        }
     ],
-    "default": [
-
+    "flaw": [
+        "a tué sa famille",
+        "ne sait pas mentir sans se trahir",
+        "est terriblement paranoïaque",
+        "se trouve vraiment trop parfait",
+        "ne reste jamais en place",
+        "vit dans la peur constante de mourir",
+        "est un gros radin",
+        "veut sauver tout le monde même quand c'est impossible",
+        "cherche toujours à voler la vedette aux autres",
+        "ne supporte pas de recevoir des ordres",
+        "est snob et narcissique",
+        "parle très fort, trop fort",
+        "a l'impression d'être un gros nul",
+        "a un penchant trop prononcé pour la boisson",
+        "croit avoir été maudit, et cherche à le cacher à tout prix",
+        "n'a aucun tact",
+        "veut manger toute la nourriture qu'il croise",
+        "est le dernier des hypocrites",
+        "parle de lui-même à la troisième personne",
+        "est un pessimiste fini",
+        "est très immature, se comporte comme un gros bébé",
+        "ne sait pas prendre des décisions sous stress",
+        "fait preuve d'une obstination proche de la démence"
     ],
-    "baubles": [
-
+    "trinkets": [
+        "une sacoche avec dix pois secs",
+        "une petite statue d'éléphant",
+        "un petit livre de poésie naine",
+        "un dé à vingt faces",
+        "une chaîne à laquelle est accrochée la tête d'une clé brisée",
+        "un joli coquillage",
+        "un baume à lèvres",
+        "une tulipe qui ne fâne jamais",
+        "une plume de paon",
+        "un glaçon qui ne fond jamais",
+        "une perruque blonde platine",
+        "un flacon d'huile essentielle",
+        "un oeil de basilic conservé",
+        "deux faux ongles peints de symboles ésotériques",
+        "des ciseaux de coiffeur usés",
+        "une boucle de ceinture",
+        "une lettre de plainte destinée à un magasin de jouets",
+        "une chaussure pour chien",
+        "une bougie sans odeur et qui ne fume pas",
+        "un carré de tissu blanc qui ne se salit jamais",
+        "un livre dont le texte change à chaque ouverture",
+        "un carton d'invitation pour une fête déjà passée",
+        "une planche de bois inifugée",
+        "une fiole de sirop d'érable",
+        "un bouclier miniature",
+        "une balance de marchand couverte de sang",
+        "un crâne de rat sur lequel est gravé un blason inconnu",
+        "une statue en taille réelle d'un gnome",
+        "un bloc de savon qui sent la chair pourrie",
+        "un gros cadenas sans clé",
+        "une pierre avec une texture soyeuse",
+        "un spéculum rouillé",
+        "un cube jouant une musique étrange sur demande"        
     ]
 }

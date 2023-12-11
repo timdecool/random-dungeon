@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import CharactersSection from '@/components/Page/CharactersSection.vue'
-import DungeonsSection from '@/components/Page/DungeonsSection.vue'
-import HomePage from '@/components/Page/HomePage.vue'
+import CharactersSection from '@/views/CharactersSection.vue'
+import DungeonsSection from '@/views/DungeonsSection.vue'
+import HomePage from '@/views/HomePage.vue'
 
 
 const router = createRouter({

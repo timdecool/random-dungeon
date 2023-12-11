@@ -1,5 +1,5 @@
 <script>
-    import CreationView from '../Content/CreationView.vue';
+    import CreationView from '@/components/Content/CreationView.vue';
     export default {
         components : {
             CreationView

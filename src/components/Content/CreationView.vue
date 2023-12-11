@@ -1,10 +1,24 @@
 <script>
 import ProgressBar from '@/components/Layout/ProgressBar.vue'
+import charactersJSON from '@/data/characters.json'
 
 export default {
     name:"CreationView",
     components : {
         ProgressBar
+    },
+    data() {
+            return {
+                characterCreationData : charactersJSON
+
+            }
+    },
+    computed: {
+        randomAscend: () => {
+            let ascends = []
+            
+            return ascends
+        }
     }
 }
 </script>

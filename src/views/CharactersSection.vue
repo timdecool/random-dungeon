@@ -1,8 +1,12 @@
 <script>
+    // Tools
     import { useCharactersStore } from '@/stores'
     import { mapActions, mapState, mapGetters } from 'pinia'
-    import CreationView from '../Content/CreationView.vue';
+
+    // Views
+    import CreationView from '@/components/Content/CreationView.vue';
     import GalleryView from '@/components/Content/GalleryView.vue'
+
     export default {
         components : {
             CreationView,
@@ -10,7 +14,7 @@
         },
         data() {
             return {
-                creationViewActivated : true,
+                creationViewActivated : true
             }
         },
         computed: {

@@ -65,7 +65,7 @@
             "name": "Magicien",
             "mainStat": "Intelligence",
             "feats": [
-                "Boule de feu","Charme","Sommeil",""
+                "Boule de feu","Charme","Sommeil"
             ],
             "weapons": [
                 "Baguette","Bâton magique", "Dague","Grimoire"
@@ -153,7 +153,7 @@
             "name": "Captif"
         }
     ],
-    "flaw": [
+    "flaws": [
         "a tué sa famille",
         "ne sait pas mentir sans se trahir",
         "est terriblement paranoïaque",

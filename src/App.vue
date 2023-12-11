@@ -10,9 +10,7 @@ import FooterView from '@/components/Layout/FooterView.vue'
     <template #header>
       <main-nav />
     </template>
-    <Transition name="slide-fade">
       <RouterView />
-    </Transition>
     <template #footer>
       <footer-view />
     </template>

@@ -5,8 +5,10 @@
             "name": "Elfe",
             "lifespan": 750,
             "typicalNames": [
-                "Rolim", "Fylson", "Urdusin","Kelvhan","Erlan","Tassarion","Aien","Vulmon","Kuskyn","Alred","Elen","Goren","Elaith","Nieven","Ilphas","Amrynn","Micaiah","Alanis","Cyran","Bemere","Gaelin"
+                "Rolim", "Fylson", "Urdusin","Kelvhan","Erlan","Tassarion","Aien","Vulmon","Kuskyn","Alred","Elen","Goren","Elaith","Nieven","Ilphas","Amrynn","Micaiah","Alanis","Cyran","Bemere","Gaelin","Ivellios","Laucian","Mindartis","Paelias","Peren","Quarion","Riardon","Rolen","Soveliss","Thamior","Varis","Adrie","Althaea","Anastrianna","Antinua","Bethrynna","Birel","Caelynn","Enna","Felosial","Jelenneth","Keyleth","Theirastra","Vadania","Valanthe","Xanaphia"
             ],
+            "avgSize": 170,
+            "avgWeight": 55,
             "src": ""
         },
         {
@@ -14,8 +16,10 @@
             "name": "Orc",
             "lifespan": 60,
             "typicalNames": [
-                "Klapdud","Buramog","Woggha","Snugug","Shamar","Romarod","Tidgug","Fudhagh","Korgulg","Routhu","Xaguk","Zalthu","Nargulg","Borug","Sudagog","Magra","Dul","Xagok","Urzul","Yazgash","Mazoga","Bum","Ragash","Umog","Ushat","Gonk"
+                "Klapdud","Buramog","Woggha","Snugug","Shamar","Romarod","Tidgug","Fudhagh","Korgulg","Routhu","Xaguk","Zalthu","Nargulg","Borug","Sudagog","Magra","Dul","Xagok","Urzul","Yazgash","Mazoga","Bum","Ragash","Umog","Ushat","Gonk","Dench","Feng","Gell","Holg","Imsh","Keth","Krusk","Mhurren","Ront","Shump","Thokk","Baggi","Emen","Engong","Kansif","Myev","Neega","Ovak","Ownka","Shautha","Sutha","Vola","Volen","Yevelda"
             ],
+            "avgSize": 200,
+            "avgWeight": 110,
             "src": ""
         },
         {
@@ -23,17 +27,76 @@
             "name": "Halfelin",
             "lifespan": 90,
             "typicalNames": [
-                "Erwan", "Garder", "Belser","Zalumo", "Davwan","Meremin","Falrin","Elyver","Falzin","Jayrana","Yophina","Breni","Belcaryn","Elidrey","Horfer","Merry","Herugar","Moro","Gundobad","Clothair","Amanda","Taryn","Madeline","Wiseman","Bavo","Doderic"
+                "Erwan", "Garder", "Belser","Zalumo", "Davwan","Meremin","Falrin","Elyver","Falzin","Jayrana","Yophina","Breni","Belcaryn","Elidrey","Horfer","Merry","Herugar","Moro","Gundobad","Clothair","Amanda","Taryn","Madeline","Wiseman","Bavo","Doderic", "Alton","Ander","Cade","Corrin","Eldon","Finnan","Garret","Lindal","Lyle","Merric","Osborn","Perrin","Reed","Roscoe","Wellby","Andry","Bree","Callie","Cora","Euphémie","Jillian","Kithri","Lidda","Nedda","Portia","Trym","Vani"
             ],
+            "avgSize": 90,
+            "avgWeight": 18,
             "src": ""
         },
         {
             "id": 4,
             "name": "Nain",
-            "lifespan": 200,
+            "lifespan": 400,
             "typicalNames" : [
-                "Mukhal","Domik","Throrunli","Dorarmath","Kakhoug","Thelam","Duribun","Turfud","Barirback","Nuraggor","Assogith","Kronabela","Elsibela","Elrralsia","Kossetalyn","Umalin","Groteala","Kuvebelyn","Katgroubo"
+                "Mukhal","Domik","Throrunli","Dorarmath","Kakhoug","Thelam","Duribun","Turfud","Barirback","Nuraggor","Assogith","Kronabela","Elsibela","Elrralsia","Kossetalyn","Umalin","Groteala","Kuvebelyn","Katgroubo", "Adrik","Albérich","Baern","Barendd","Brottor","Bruenor","Dain","Darrak","Delg","Eberk","Einkil","Fargrim","Flint","Gardain","Harbek","Kildrak","Morgran","Ambre","Artin","Audhild","Bardryn","Dagnal","Diesa","Eldeth","Falkrunn","Finellen","Gunnloda","Gurdis","Helja","Hlin","Kathra","Kristryd","Ilde","Liftrasa","Mardred","Riswynn","Sannl","Torbera"
             ],
+            "avgSize": 130,
+            "avgWeight":70,
+            "src": ""
+        },
+        {
+            "id": 5,
+            "name": "Humain",
+            "lifespan": 100,
+            "typicalNames": [
+                "Jon", "Aseir","Bardeid","Haseid","Khemed","Atala","Ceidil","Hama","Meilil","Yasheira","Darvin","Dorn","Evendur","Randal","Arveene","Esvele","Jhessail","Kerri","Bor","Fodel","Glar","Grigor","Ivor","Alethra","Katernin","Mara","Natali","Olma","Ander","Blath","Geth","Lander","Luth","Urth","Taman","Amafrey","Betha","Cefrey","Kethra","Silifrey","Aoth","Bareris","Ehput-Ki","Mumed","Ramas","Arizima","Murithi","Thola","Borivik","Jandar","Hulmarra","Immith","Shevarra","Yuldra","Chen","Jiang","Meng","Bai","Chao","Jia","Qiao","Tai","Anton","Diero","Rimardo","Salazar","Umbero","Belama","Dona","Faila","Marta","Selise"
+            ],
+            "avgSize":170,
+            "avgWeight": 60,
+            "src":""
+        },
+        {
+            "id": 6,
+            "name": "Gnome",
+            "lifespan": "500",
+            "typicalNames": [
+                "Alston","Alvyn","Boddynock","Brocc","Burgell","Dimble","Eldon","Erky","Fonkin","Frug","Gerbo","Gimble","Glim","Jebeddo","Kellen","Namfoodle","Orryn","Roondar","Seebo","Sindri","Warryn","Wrenn","Zook","Bimpnottin","Breena","Caramip","Carlin","Donella","Duvamil","Ella","Ellyjobell","Ellywick","Lilli","Loopmottin","Lorilla","Mardnab","Nissa","Nyx","Oda","Orla","Roywyn","Shamil","Tana","Waywocket","Zanna"
+            ],
+            "avgSize":100,
+            "avgWeight": 18,
+            "src":""
+        },
+        {
+            "id": 7,
+            "name": "Drakéide",
+            "lifespan": 80,
+            "typicalNames": [
+                "Arjhan","Balasar","Bharash","Donaar","Ghesh","Heskan","Kriv","Medrash","Mehen","Nadarr","Pandjed","Patrin","Rhogar","Shamash","Shedinn","Tarhun","Torinn","Akra","Biri","Daar","Farideh","Harann","Flavilar","Jheri","Kava","Korinn","Mishann","Nala","Perra","Raiann","Sora","Surina","Thava","Uadjit"
+            ],
+            "avgSize":195,
+            "avgWeight": 150,
+            "src": ""
+        },
+        {
+            "id": 8,
+            "name": "Tieffelin",
+            "lifespan": 120,
+            "typicalNames": [
+                "Akmenos","Amnon","Barakas","Damakos","Ekemon","Iados","Kairon","Leucis","Melech","Mordai","Morthos","Pelaios","Skamos","Therai","Akta","Anakis","Bryseis","Criella","Damaia","Ea","Kallista","Lerissa","Makaria","Nemeia","Orianna","Phelaia","Rieta"
+            ],
+            "avgSize":180,
+            "avgWeight": 60,
+            "src": ""
+        },
+        {
+            "id": 9,
+            "name": "Aarakocra",
+            "lifespan": 30,
+            "typicalNames": [
+                "Aera","Aial","Aur","Deekek","Errk","Heehk","Ikki","Kleeck","Oorr","Ouss","Quaf","Quierk","Salleek","Urreek","Zeed"
+            ],
+            "avgSize":150,
+            "avgWeight": 45,
             "src": ""
         }
     ],
@@ -51,7 +114,7 @@
         },
         {
             "id": 2,
-            "name": "Voleur",
+            "name": "Roublard",
             "mainStat": "Dextérité",
             "feats": [
                 "Attaque sournoise","Maîtrise des poisons","Dissimulation"
@@ -80,6 +143,50 @@
             ],
             "weapons": [
                 "Épée","Masse","Marteau","Lance","Faux","Fléau"
+            ]
+        },
+        { 
+            "id": 5,
+            "name": "Barbare",
+            "mainStat":"Force",
+            "feats": [
+                "Frénésie","Instinct sauvage","Rage implacable","Esprit totem","Aspect de la bête","Magie sauvage"
+            ],
+            "weapons": [
+                "Gourdin","Massue","Hache","Claymore"
+            ]
+        },
+        {
+            "id": 6,
+            "name": "Barde",
+            "mainStat": "Charisme",
+            "feats": [
+                "Chant reposant","Inspiration martiale","Mots cinglants","Contre-charme"
+            ],
+            "weapons": [
+                "Arbalète de poing","Épée longue","Épée courte","Rapière","Fouet"
+            ]
+        },
+        {
+            "id": 7,
+            "name": "Druide",
+            "mainStat": "Sagesse",
+            "feats": [
+                "Forme sauvage","Récupération naturelle","Croissance d'épines","Immobilisation","Lenteur","Tempête de neige","Silence","Fléau d'insectes","Appel de la foudre","Pattes d'araignée"
+            ],
+            "weapons": [
+                "Gourdin","Dague","Fléchette","Javeline","Masse d'armes","Bâton","Cimeterre","Fronde","Serpe","Lance"
+            ]
+        },
+        {
+            "id": 8,
+            "name": "Rôdeur",
+            "mainStat": "Dextérité",
+            "feats": [
+                "Vigilance primitive","Foulée tellurique","Disparition","Sens sauvages","Ennemi juré"
+            ],
+            "weapons": [
+                "Arc long","Art court","Arbalète","Fronde","Couteau de chasse","Épée courte","Fléau d'armes","Lance","Bâton"
             ]
         }
     ],
@@ -154,63 +261,63 @@
         }
     ],
     "flaws": [
-        "a tué sa famille",
-        "ne sait pas mentir sans se trahir",
-        "est terriblement paranoïaque",
-        "se trouve vraiment trop parfait",
-        "ne reste jamais en place",
-        "vit dans la peur constante de mourir",
-        "est un gros radin",
-        "veut sauver tout le monde même quand c'est impossible",
-        "cherche toujours à voler la vedette aux autres",
-        "ne supporte pas de recevoir des ordres",
-        "est snob et narcissique",
-        "parle très fort, trop fort",
-        "a l'impression d'être un gros nul",
-        "a un penchant trop prononcé pour la boisson",
-        "croit avoir été maudit, et cherche à le cacher à tout prix",
-        "n'a aucun tact",
-        "veut manger toute la nourriture qu'il croise",
-        "est le dernier des hypocrites",
-        "parle de lui-même à la troisième personne",
-        "est un pessimiste fini",
-        "est très immature, se comporte comme un gros bébé",
-        "ne sait pas prendre des décisions sous stress",
-        "fait preuve d'une obstination proche de la démence"
+        "J'ai tué ma famille",
+        "Je ne sais pas mentir sans me trahir",
+        "Je suis terriblement paranoïaque",
+        "Je me trouve vraiment trop parfait",
+        "Je ne reste jamais en place",
+        "Je vis dans la peur constante de mourir",
+        "Je suis très radin",
+        "Je veux toujours sauver tout le monde même quand c'est impossible",
+        "Je cherche toujours à voler la vedette aux autres",
+        "Je ne supporte pas de recevoir des ordres",
+        "Je suis snob et narcissique",
+        "Je parle très fort, trop fort",
+        "J'ai vraiment l'impression d'être un incapable",
+        "J'ai un penchant trop prononcé pour la boisson",
+        "Je crois avoir été maudit, et cherche à le cacher à tout prix",
+        "Je n'ai aucun tact",
+        "Je veux manger toute la nourriture que je trouve",
+        "Je suis le dernier des hypocrites",
+        "Il parle de lui-même à la troisième personne",
+        "Je suis un pessimiste fini",
+        "Je suis très immature, je ne supporte pas de ne pas obtenir ce que je veux",
+        "Je ne sais pas prendre des décisions sous stress",
+        "Je fais preuve d'une obstination proche de la démence"
     ],
     "trinkets": [
-        "une sacoche avec dix pois secs",
-        "une petite statue d'éléphant",
-        "un petit livre de poésie naine",
-        "un dé à vingt faces",
-        "une chaîne à laquelle est accrochée la tête d'une clé brisée",
-        "un joli coquillage",
-        "un baume à lèvres",
-        "une tulipe qui ne fâne jamais",
-        "une plume de paon",
-        "un glaçon qui ne fond jamais",
-        "une perruque blonde platine",
-        "un flacon d'huile essentielle",
-        "un oeil de basilic conservé",
-        "deux faux ongles peints de symboles ésotériques",
-        "des ciseaux de coiffeur usés",
-        "une boucle de ceinture",
-        "une lettre de plainte destinée à un magasin de jouets",
-        "une chaussure pour chien",
-        "une bougie sans odeur et qui ne fume pas",
-        "un carré de tissu blanc qui ne se salit jamais",
-        "un livre dont le texte change à chaque ouverture",
-        "un carton d'invitation pour une fête déjà passée",
-        "une planche de bois inifugée",
-        "une fiole de sirop d'érable",
-        "un bouclier miniature",
-        "une balance de marchand couverte de sang",
-        "un crâne de rat sur lequel est gravé un blason inconnu",
-        "une statue en taille réelle d'un gnome",
-        "un bloc de savon qui sent la chair pourrie",
-        "un gros cadenas sans clé",
-        "une pierre avec une texture soyeuse",
-        "un spéculum rouillé",
-        "un cube jouant une musique étrange sur demande"        
+        "Une sacoche avec dix pois secs",
+        "Une petite statue d'éléphant",
+        "Un petit livre de poésie naine",
+        "Un dé à vingt faces",
+        "Une chaîne à laquelle est accrochée la tête d'une clé brisée",
+        "Un joli coquillage",
+        "Un baume à lèvres",
+        "Une tulipe qui ne fâne jamais",
+        "Une plume de paon",
+        "Un glaçon qui ne fond jamais",
+        "Une perruque blonde platine",
+        "Un flacon d'huile essentielle",
+        "Un oeil de basilic conservé",
+        "Deux faux ongles peints de symboles ésotériques",
+        "Des ciseaux de coiffeur usés",
+        "Une boucle de ceinture",
+        "Une lettre de plainte destinée à un magasin de jouets",
+        "Une chaussure pour chien",
+        "Une bougie sans odeur et qui ne fume pas",
+        "Un carré de tissu blanc qui ne se salit jamais",
+        "Un livre dont le texte change à chaque ouverture",
+        "Un carton d'invitation pour une fête déjà passée",
+        "Une planche de bois inifugée",
+        "Une fiole de sirop d'érable",
+        "Un bouclier miniature",
+        "Une balance de marchand couverte de sang",
+        "Un crâne de rat sur lequel est gravé un blason inconnu",
+        "Une statue en taille réelle d'un gnome",
+        "Un bloc de savon qui sent la chair pourrie",
+        "Un gros cadenas sans clé",
+        "Une pierre avec une texture soyeuse",
+        "Un spéculum rouillé",
+        "Un cube jouant une musique étrange sur demande"        
     ]
 }

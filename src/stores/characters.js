@@ -8,16 +8,68 @@ const getCurrentState = () => {
     return localData ? JSON.parse(localData): [{
         name: "Océane",
         race: "Halfeline",
-        class: "Illusionniste",
+        charClass: "Illusionniste",
         background: "Enfant des rues",
-        bauble: "Vieille photo de BTS"
+        bauble: "Vieille photo de BTS",
+        lvl: 1
     },
     {
         name: "Roman",
         race: "Humain",
-        class: "Paladin",
+        charClass: "Paladin",
         background: "Sans histoire",
-        bauble: "Peluche d'éléphant hélas trop chère"
+        bauble: "Peluche d'éléphant hélas trop chère",
+        lvl: 1,
+        inventory: [],
+        gold: 0,
+    },
+    {
+        name: "Océane",
+        race: "Halfeline",
+        charClass: "Illusionniste",
+        background: "Enfant des rues",
+        bauble: "Vieille photo de BTS",
+        lvl: 1
+    },
+    {
+        name: "Roman",
+        race: "Humain",
+        charClass: "Paladin",
+        background: "Sans histoire",
+        bauble: "Peluche d'éléphant hélas trop chère",
+        lvl: 1
+    },
+    {
+        name: "Océane",
+        race: "Halfeline",
+        charClass: "Illusionniste",
+        background: "Enfant des rues",
+        bauble: "Vieille photo de BTS",
+        lvl: 1
+    },
+    {
+        name: "Roman",
+        race: "Humain",
+        charClass: "Paladin",
+        background: "Sans histoire",
+        bauble: "Peluche d'éléphant hélas trop chère",
+        lvl: 1
+    },
+    {
+        name: "Océane",
+        race: "Halfeline",
+        charClass: "Illusionniste",
+        background: "Enfant des rues",
+        bauble: "Vieille photo de BTS",
+        lvl: 1
+    },
+    {
+        name: "Roman",
+        race: "Humain",
+        charClass: "Paladin",
+        background: "Sans histoire",
+        bauble: "Peluche d'éléphant hélas trop chère",
+        lvl: 1
     }
 
 ]}

@@ -19,13 +19,18 @@ export default {
     },
     methods: {
         handleClassFilter(arr) {
-            classArr = arr
+            console.log(arr)
+            this.classArr = arr
+            console.log(this.classArr)
         }
     },
     data() {
         return {
             classArr: []
         }
+    },
+    computed: {
+
     }
 }
 </script>
@@ -35,6 +40,7 @@ export default {
 
     <h2 class="text-center mb-3">Galerie de vos {{ mode === "characters" ? "personnages":"donjons" }}</h2>
     <section>
+        <pre>{{ classArr }}</pre>
         <gallery-filters :mode="mode" @updateClassFilter="handleClassFilter"/>
     </section>
     <section class="d-flex flex-wrap justify-content-around mb-5">

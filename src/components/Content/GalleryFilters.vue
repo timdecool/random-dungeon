@@ -13,7 +13,7 @@ const classesToDisplay = ref(availableClasses)
 const emit = defineEmits(['updateClassFilter'])
 
 function toggleFilter(item) {
-    if(classesToDisplay.includes(item)) {
+    if(classesToDisplay.value.includes(item)) {
         let index = classesToDisplay.value.findIndex((charClass) => charClass === item)
         classesToDisplay.value.splice(index,1)
     } else {

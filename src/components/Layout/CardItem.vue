@@ -9,14 +9,13 @@ const props = defineProps({
 
 
 <template>
-
     <div class="card card-character" style="width: 18rem;">
         <img :src="item.src ? item.src:'/src/assets/img/unknown.jpg'" class="card-img-top" :alt="`Image de ${item.name}`">
         <div class="card-body">
             <h5 class="card-title">
                 {{item.name}}
             </h5>
-            <p class="card-text">{{ item.race }}, {{ item.class }} de niveau {{ item.lvl }}</p>
+            <p class="card-text">{{ item.race }}, {{ item.charClass }} de niveau {{ item.lvl }}</p>
             <router-link :to="{ name: 'CharacterDetails', params: { name: item.name }}" class="btn btn-primary btn-card">Détails</router-link>
         </div>
     </div>

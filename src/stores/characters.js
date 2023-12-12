@@ -42,7 +42,7 @@ const getCurrentState = () => {
     {
         name: "Océane",
         race: "Halfeline",
-        charClass: "Illusionniste",
+        charClass: "Druide",
         background: "Enfant des rues",
         bauble: "Vieille photo de BTS",
         lvl: 1
@@ -50,7 +50,7 @@ const getCurrentState = () => {
     {
         name: "Roman",
         race: "Humain",
-        charClass: "Paladin",
+        charClass: "Barde",
         background: "Sans histoire",
         bauble: "Peluche d'éléphant hélas trop chère",
         lvl: 1
@@ -58,7 +58,7 @@ const getCurrentState = () => {
     {
         name: "Océane",
         race: "Halfeline",
-        charClass: "Illusionniste",
+        charClass: "Prêtre",
         background: "Enfant des rues",
         bauble: "Vieille photo de BTS",
         lvl: 1
@@ -66,7 +66,7 @@ const getCurrentState = () => {
     {
         name: "Roman",
         race: "Humain",
-        charClass: "Paladin",
+        charClass: "Guerrier",
         background: "Sans histoire",
         bauble: "Peluche d'éléphant hélas trop chère",
         lvl: 1

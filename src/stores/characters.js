@@ -22,26 +22,26 @@ const getCurrentState = () => {
 
 ]}
 
-export const useCharactersStore = defineStore('characters', () => {
+export const useCharactersStore = defineStore(STORE_NAME, () => {
     // STATES
     const characters = ref(getCurrentState())
 
 
     // GETTERS
     const getCharacters = computed(() => {
-        const localCharacters = localStorage.getItem(STORE_LOCALE_STORAGE_KEY)
+        const localCharacters = localStorage.getItem(STORE_LOCAL_STORAGE_KEY)
         return localCharacters ? JSON.parse(localCharacters) : []
     })
 
     // ACTIONS
     function addCharacter(item) {
-        characters.push(item)
+        characters.value.push(item)
         localStorage.setItem(STORE_LOCAL_STORAGE_KEY, JSON.stringify(characters))
     }
 
     function updateCharacter(item) {
-        const index = characters.findIndex(el => {
-            return e.id === item.id
+        const index = characters.value.findIndex(el => {
+            return el.id === item.id
         })
         if (index != -1) {
             characters[index] = item
@@ -50,15 +50,15 @@ export const useCharactersStore = defineStore('characters', () => {
     }
 
     function removeCharacter(item) {
-        const index = characters.findIndex(el => {
-            return e.id === item.id
+        const index = characters.value.findIndex(el => {
+            return el.id === item.id
         })
         if (index != -1) {
-            characters.splice(index, 1)
+            characters.value.splice(index, 1)
         }
         localStorage.setItem(STORE_LOCAL_STORAGE_KEY, JSON.stringify(characters))
     }
     
-  return { characters, getCharacters, addCharacter, removeCharacter, updateCharacter }
+return { characters, getCharacters, addCharacter, removeCharacter, updateCharacter }
 
 })

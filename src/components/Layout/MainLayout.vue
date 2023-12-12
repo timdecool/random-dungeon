@@ -1,24 +1,65 @@
-<script setup>
-    
+<script>
+
+    export default {
+        name: "MainLayout",
+        props: {
+            headerClass : {
+                type: Array,
+                required: true,
+                default: function() {
+                    return null
+                }
+            },
+            bodyClass : {
+                type: Array,
+                required: true,
+                default: function() {
+                    return null
+                }
+            },
+            footerClass : {
+                type: Array,
+                required: true,
+                default: function() {
+                    return null
+                }
+            }
+        }
+    }
 </script>
 
 <template>
-    <div class="container">
+    <div >
         <header 
             v-if="$slots.header"
-            class="p-3 mb-3 border-bottom"
+            :class="headerClass"
         >
             <slot name="header">
                
             </slot>
         </header>
-        <main>
+        <main
+            class="container"
+            :class="bodyClass"
+        >
             <slot></slot>
         </main>
-        <footer v-if="$slots.footer">
+        <footer
+            v-if="$slots.footer"
+            :class="footerClass"
+        >
             <slot name="footer">
                 
             </slot>
         </footer>
     </div>
 </template>
+
+<style scoped>
+    footer {
+        width: 100vw;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+    }
+</style>

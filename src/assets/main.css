@@ -91,6 +91,17 @@ h1 {
   margin-right: 20px;
 }
 
+.btn-creation {
+  width: 350px;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.btn-creation:hover {
+  background-color: #8b5726 !important;
+  border-color: #8b5726 !important;
+}
+
 .lead {
   display: flex;
   align-items: center;

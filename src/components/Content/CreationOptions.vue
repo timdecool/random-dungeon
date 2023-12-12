@@ -22,7 +22,7 @@ function confirmChoice(option) {
                 <form class="d-flex flex-column justify-content-center align-items-center">
                     <div class="mt-3" v-for="(option, index) in currentQuestion.options.value" :key="index" @click.prevent="confirmChoice(option)">
                         <input type="radio" class="btn-check" name="options" :id="`btn-check-${index+1}`" >
-                        <label class="btn btn-primary" :for="`btn-check-${index+1}`">{{ option }}</label>
+                        <label class="btn btn-primary btn-creation" :for="`btn-check-${index+1}`">{{ option }}</label>
                     </div>
                 </form>
             </div>

@@ -18,7 +18,6 @@
 @import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&display=swap');
 
-
 html,
 body {
   display: flex;
@@ -61,7 +60,7 @@ h1 {
 .preview {
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(./img/firecamp.png) !important;
+  background-image: url(./img/web/firecamp.png) !important;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -101,6 +100,20 @@ h1 {
   background-color: #8b5726 !important;
   border-color: #8b5726 !important;
 }
+.card-div{
+  margin-bottom: 20px;
+}
+
+.btn-gallery {
+  width: auto;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.btn-gallery:hover {
+  background-color: #8b5726 !important;
+  border-color: #8b5726 !important;
+}
 
 .lead {
   display: flex;
@@ -128,7 +141,7 @@ footer {
   width: 100%;
   height: 3rem;
   color: #99f06a;
-  background-image: url(./img/footer.gif);
+  background-image: url(./img/web/footer.gif);
   background-repeat: no-repeat;
   background-size: cover;
 }

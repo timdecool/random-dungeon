@@ -1,0 +1,104 @@
+{
+  "dungeons": [
+    {
+      "id": 1,
+      "name": "Caverns of Shadow",
+      "difficulty": "Intermediate",
+      "biom": "darkness",
+      "boss": {
+        "name": "Shadowlord",
+        "health": 800,
+        "damage": 50,
+        "specialAbility": "Summon Shadows"
+      },
+      "monsters": [
+        {
+          "name": "Gloomhound",
+          "health": 150,
+          "damage": 20
+        },
+        {
+          "name": "Darkcrawler",
+          "health": 120,
+          "damage": 25
+        },
+        {
+          "name": "Spectral Archer",
+          "health": 100,
+          "damage": 30
+        }
+      ],
+      "loot": [
+        "Enchanted Dagger",
+        "Shadow Cloak",
+        "Elixir of Invisibility"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Forgotten Catacombs",
+      "difficulty": "Advanced",
+      "boss": {
+        "name": "Necromancer Lich",
+        "health": 1200,
+        "damage": 70,
+        "specialAbility": "Raise Undead Army"
+      },
+      "monsters": [
+        {
+          "name": "Skeletal Warrior",
+          "health": 180,
+          "damage": 30
+        },
+        {
+          "name": "Ghostly Banshee",
+          "health": 200,
+          "damage": 25
+        },
+        {
+          "name": "Deathshade Assassin",
+          "health": 250,
+          "damage": 40
+        }
+      ],
+      "loot": [
+        "Staff of Souls",
+        "Crown of the Damned",
+        "Potion of Eternal Rest"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Fiery Abyss",
+      "difficulty": "Expert",
+      "boss": {
+        "name": "Inferno Dragon",
+        "health": 2000,
+        "damage": 100,
+        "specialAbility": "Breath of Flames"
+      },
+      "monsters": [
+        {
+          "name": "Lava Elemental",
+          "health": 250,
+          "damage": 40
+        },
+        {
+          "name": "Hellfire Imp",
+          "health": 180,
+          "damage": 35
+        },
+        {
+          "name": "Magma Golem",
+          "health": 300,
+          "damage": 50
+        }
+      ],
+      "loot": [
+        "Blazing Sword",
+        "Dragon Scale Armor",
+        "Flask of Infernal Fury"
+      ]
+    }
+  ]
+}

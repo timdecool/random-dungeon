@@ -10,15 +10,17 @@ import { useCharacterCreationStore } from '@/stores'
 const charCreationStore = useCharacterCreationStore()
 
 function handleConfirm(option) {
-    charCreationStore.setCurrentTrait(option)
+  charCreationStore.setCurrentTrait(option)
 }
-
 </script>
 
 <template>
-    <h1 class="text-center">Crée ton personnage</h1>
-    <progress-bar />
-    <!-- <pre>{{ charCreationStore.currentCreation }}</pre> -->
-    <!-- <pre>{{ charCreationStore.getCurrentQuestion }}</pre> -->
-    <creation-options :currentQuestion="charCreationStore.getCurrentQuestion" @confirm="handleConfirm" />
+  <h1 class="text-center">Crée ton personnage</h1>
+  <progress-bar />
+  <!-- <pre>{{ charCreationStore.currentCreation }}</pre> -->
+  <!-- <pre>{{ charCreationStore.getCurrentQuestion }}</pre> -->
+  <creation-options
+    :currentQuestion="charCreationStore.getCurrentQuestion"
+    @confirm="handleConfirm"
+  />
 </template>

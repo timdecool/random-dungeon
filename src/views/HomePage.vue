@@ -11,11 +11,11 @@
         créez des souvenirs inoubliables. Prêt à vivre l'aventure ?
       </p>
       <div class="lead">
-        <a href="#" class="btn btn-lg btn-secondary d-flex justify-content-center"
+        <router-link to="/characters" class="btn-home btn btn-lg btn-secondary d-flex justify-content-center"
           >Commencez une partie
-        </a>
+        </router-link>
       
-        <a href="#" class="btn btn-lg btn-secondary d-flex justify-content-center"
+        <a href="#" class="btn-home btn btn-lg btn-secondary d-flex justify-content-center"
           >Reprendre la dernière partie ?</a>
       </div>
     </div>

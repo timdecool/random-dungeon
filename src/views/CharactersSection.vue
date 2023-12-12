@@ -24,7 +24,8 @@
 </script>
 
 <template>
-    <gallery-view v-if="!creationViewActivated" :data="characters" mode="characters"/>
+    <gallery-view v-if="!creationViewActivated" :dataArr="characters" mode="characters"/>
     <creation-view v-else :data="characters" mode="characters"/>
     <button @click="creationViewActivated = !creationViewActivated">Changer de vue</button>
 </template>
+

@@ -60,7 +60,7 @@ h1 {
 .preview {
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(./img/firecamp.png) !important;
+  background-image: url(./img/web/firecamp.png) !important;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -141,7 +141,7 @@ footer {
   width: 100%;
   height: 3rem;
   color: #99f06a;
-  background-image: url(./img/footer.gif);
+  background-image: url(./img/web/footer.gif);
   background-repeat: no-repeat;
   background-size: cover;
 }

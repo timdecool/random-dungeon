@@ -5,7 +5,7 @@
 }
 
 .slide-fade-leave-active {
-  transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+  transition: all 8s cubic-bezier(1, 0.5, 0.8, 1);
 }
 
 .slide-fade-enter-from,
@@ -54,7 +54,18 @@ body {
 }
 
 h1 {
-  margin-bottom: 35px;
+  margin-bottom: 0px;
+}
+
+.cover-heading {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.intro {
+  margin-bottom: 20px;
+  background-color: #302f32;
+  color: #ffff;
 }
 
 .preview {
@@ -100,6 +111,7 @@ h1 {
   background-color: #8b5726 !important;
   border-color: #8b5726 !important;
 }
+
 .card-div{
   margin-bottom: 20px;
 }

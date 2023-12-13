@@ -21,5 +21,6 @@ import FooterBlock from '@/components/Layout/FooterBlock.vue'
 </template>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
 
 </style>

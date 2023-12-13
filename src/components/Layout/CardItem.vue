@@ -9,7 +9,7 @@ const props = defineProps({
 
 
 <template>
-    <div class="card card-character" style="width: 18rem;">
+    <div class="card card-character">
         <img :src="item.src ? item.src:'/src/assets/img/unknown.jpg'" class="card-img-top" :alt="`Image de ${item.name}`">
         <div class="card-body">
             <h5 class="card-title">

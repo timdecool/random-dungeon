@@ -20,12 +20,26 @@ function confirmChoice(option) {
                     {{ currentQuestion.question }}
                 </h2>
                 <form class="d-flex flex-column justify-content-center align-items-center">
-                    <div class="mt-3" v-for="(option, index) in currentQuestion.options.value" :key="index" @click.prevent="confirmChoice(option)">
+                    <div class="mt-3 w-100" v-for="(option, index) in currentQuestion.options.value" :key="index" @click.prevent="confirmChoice(option)">
                         <input type="radio" class="btn-check" name="options" :id="`btn-check-${index+1}`" >
-                        <label class="btn btn-primary btn-creation" :for="`btn-check-${index+1}`">{{ option }}</label>
+                        <label class="btn btn-primary btn-option" :for="`btn-check-${index+1}`">{{ option }}</label>
                     </div>
                 </form>
             </div>
         </div>
     </section>
 </template>
+
+<style scoped>
+.btn-option {
+    width: 100%;
+    font-size: 20px;
+    padding: 7px;
+    margin: 0;
+}
+
+.btn-option:hover {
+  background-color: #8b5726 !important;
+  border-color: #8b5726 !important;
+}
+</style>

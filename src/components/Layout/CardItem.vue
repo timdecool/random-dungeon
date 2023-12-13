@@ -10,8 +10,8 @@ const props = defineProps({
 
 <template>
     <div class="card card-character">
-        <img :src="item.src ? item.src:'/src/assets/img/unknown.jpg'" class="card-img-top" :alt="`Image de ${item.name}`">
         <div class="card-body">
+            <!-- <img :src="item.src ? item.src:'/src/assets/img/unknown.jpg'" class="img-card" :alt="`Image de ${item.name}`"> -->
             <h5 class="card-title">
                 {{item.name}}
             </h5>
@@ -23,8 +23,9 @@ const props = defineProps({
 
 <style scoped>
 .card-character {
-    color: white;
+color: white;
   background-color: #8b5726;
+  position: relative;
 }
 
 .btn-card {
@@ -37,6 +38,14 @@ const props = defineProps({
     color: #191818;
 }
 
+.img-card {
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    left: -15px;
+    top: -15px;
+}
 
 
 

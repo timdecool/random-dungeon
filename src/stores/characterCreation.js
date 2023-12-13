@@ -24,10 +24,22 @@ export const useCharacterCreationStore = defineStore(STORE_NAME, () => {
         weapon: null,
         background: null,
         flaw: null,
-        trinket: null
+        trinket: null,
+        attributes: null
     })
 
     // COMPUTED
+    const getCurrentStep = computed(() => {
+        let curStep = 1
+        for(let trait of Object.getOwnPropertyNames(currentCreation.value)) {
+            if(currentCreation.value[trait] !== null) {
+                curStep++
+            }
+        }
+        return curStep
+    })
+
+
     const getCurrentQuestion = computed(() => {
         let currentQuestion = { question: null, options: null }
         if(currentCreation.value.ascendancy === null) {
@@ -62,8 +74,10 @@ export const useCharacterCreationStore = defineStore(STORE_NAME, () => {
             currentQuestion.question = "Quelle babiole emmènes-tu toujours avec toi ?"
             currentQuestion.options = getTrinkets
         }
-
-
+        else if(currentCreation.value.attributes === null) {
+            currentQuestion.question = "Voici tes caractéristiques. Tu peux les relancer une fois."
+            
+        }
         return currentQuestion
     })
 
@@ -161,6 +175,6 @@ export const useCharacterCreationStore = defineStore(STORE_NAME, () => {
         return answersArray
     }
 
-return { currentCreation, getCurrentQuestion, setCurrentTrait }
+return { currentCreation, getCurrentQuestion, getCurrentStep, setCurrentTrait }
 
 })

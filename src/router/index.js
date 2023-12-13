@@ -13,9 +13,10 @@ const router = createRouter({
       component: HomePage
     },
     {
-      path: '/characters',
+      path: '/characters/:view',
       name: 'characters',
-      component: CharactersSection
+      component: CharactersSection,
+      props: true
     },
     {
       path: '/dungeons',

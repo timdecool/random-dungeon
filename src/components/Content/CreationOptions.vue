@@ -17,8 +17,8 @@ function confirmChoice(option) {
 
 <template>
     <section class="container">
-        <div class="row">
-            <div class="col-9 p-3">
+        <div class="row m-auto">
+            <div class="col-9 p-3 m-auto">
                 <h2 class="text-center">
                     {{ currentQuestion.question }}
                 </h2>

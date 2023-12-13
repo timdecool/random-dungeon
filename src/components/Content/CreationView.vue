@@ -25,7 +25,7 @@ function handleConfirm(option) {
 <template>
   <h2 class="text-center mb-3">Crée ton {{ mode === 'characters' ? 'personnage':'donjon' }}</h2>
   <div class="row">
-    <section class="d-flex flex-column align-items-center col-4 p-2 creation-recap">
+    <section class="d-flex flex-column align-items-start col-4 p-2 creation-recap">
       <character-recap />      
       <router-link to="/characters/gallery" class="btn btn-secondary">Retour à la galerie</router-link>
     </section>

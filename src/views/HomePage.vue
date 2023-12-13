@@ -35,7 +35,7 @@
     <div class="preview">
       <div class="lead">
         <router-link
-          to="/characters"
+          to="/characters/creation"
           class="btn-home btn btn-lg btn-secondary d-flex justify-content-center"
           >Commencez une partie
         </router-link>

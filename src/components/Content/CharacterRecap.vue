@@ -12,7 +12,7 @@ export default {
 <template>
   <h2>Recap</h2>
 
-  <ul>
+  <ul class="mb-2">
     <li>
       Votre ascendance : {{ currentCreation.ascendancy }}
     </li>

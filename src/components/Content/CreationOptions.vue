@@ -1,4 +1,5 @@
 <script setup>
+
 const props = defineProps({
     currentQuestion: {
         type: Object,
@@ -10,12 +11,14 @@ const emit = defineEmits(['confirm'])
 function confirmChoice(option) {
     emit('confirm', option)
 }
+
+
 </script>
 
 <template>
     <section class="container">
         <div class="row">
-            <div class="col  p-3">
+            <div class="col-9 p-3">
                 <h2 class="text-center">
                     {{ currentQuestion.question }}
                 </h2>

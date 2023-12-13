@@ -4,7 +4,7 @@ import { } from 'vue'
 // COMPONENTS
 import ProgressBar from '@/components/Layout/ProgressBar.vue'
 import CreationOptions from '@/components/Content/CreationOptions.vue'
-
+import CharacterRecap from '@/components/Content/CharacterRecap.vue'
 // STORE
 import { useCharacterCreationStore } from '@/stores'
 const charCreationStore = useCharacterCreationStore()
@@ -26,8 +26,8 @@ function handleConfirm(option) {
   <h2 class="text-center mb-3">Crée ton {{ mode === 'characters' ? 'personnage':'donjon' }}</h2>
   <div class="row">
     <section class="d-flex flex-column align-items-center col-4 p-2 creation-recap">
+      <character-recap />      
       <router-link to="/characters/gallery" class="btn btn-secondary">Retour à la galerie</router-link>
-
     </section>
     <section class="col-8 p-2">
       <progress-bar />

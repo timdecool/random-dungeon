@@ -15,6 +15,7 @@
 }
 
 /* style app */
+
 @import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&display=swap');
 
@@ -26,14 +27,9 @@ body {
   min-height: 100%;
   margin: 0;
   padding: 0;
-}
-
-body {
   background-color: rgb(35, 33, 37) !important;
   color: #ffff;
-  p {
-    font-family: 'Hedvig Letters Sans', sans-serif;
-  }
+  font-family: 'Hedvig Letters Sans', sans-serif;
 }
 
 .navPad {
@@ -92,13 +88,16 @@ h1 {
 .btn-home {
   display: inline-block; /* Use inline-block to make it only as wide as its content */
   margin: 0 auto; /* Center the button horizontally */
-  width: 320px;
+  width: 400px;
   text-align: center; /* Center the text inside the button */
   background-color: #3b3742;
   border: solid 1px rgb(253, 253, 212);
   box-shadow: 10px 5px 9px 0px #191818;
   margin-left: 20px;
   margin-right: 20px;
+    &:hover {
+      background-color: #8b5726;
+    }
 }
 
 .btn-creation {

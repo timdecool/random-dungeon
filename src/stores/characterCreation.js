@@ -1,5 +1,4 @@
 // IMPORTS
-
 import { ref, computed } from 'vue'
 import { defineStore } from 'pinia'
 import characters from '@/data/characters.json'
@@ -7,7 +6,6 @@ import characters from '@/data/characters.json'
 // KEYS
 const STORE_NAME = 'characterCreation'
 const STORE_LOCAL_STORAGE_KEY = 'characterCreation'
-
 
 const getCurrentState = () => {
     const localData = localStorage.getItem(STORE_LOCAL_STORAGE_KEY)
@@ -19,7 +17,7 @@ export const useCharacterCreationStore = defineStore(STORE_NAME, () => {
     const currentCreation = ref({
         ascendancy: null,
         name: null,
-        class: null,
+        charClass: null,
         feat: null,
         weapon: null,
         background: null,
@@ -75,10 +73,22 @@ export const useCharacterCreationStore = defineStore(STORE_NAME, () => {
             currentQuestion.options = getTrinkets
         }
         else if(currentCreation.value.attributes === null) {
-            currentQuestion.question = "Voici tes caractéristiques. Tu peux les relancer une fois."
-            
+            currentQuestion.question = "Voici tes caractéristiques. Bonne chance."
+            currentQuestion.list = getStats
         }
         return currentQuestion
+    })
+
+    const getStats = computed(() => {
+        let stats = ["Force","Dextérité","Constitution","Intelligence","Sagesse","Charisme"]
+        let charStats = []
+        for(let stat of stats) {
+            charStats.push({
+                "stat": stat,
+                "value": Math.ceil(Math.random() * 6)*3
+            })
+        }
+        return charStats
     })
 
     const getAscendancies = computed(() => {
@@ -135,6 +145,22 @@ export const useCharacterCreationStore = defineStore(STORE_NAME, () => {
     })
 
     // ACTIONS
+
+    function resetCreation() {
+        currentCreation.value = {
+            ascendancy: null,
+            name: null,
+            class: null,
+            feat: null,
+            weapon: null,
+            background: null,
+            flaw: null,
+            trinket: null,
+            attributes: null
+        }
+    }
+    
+
     function setCurrentTrait(option) {
         if(currentCreation.value.ascendancy === null) {
             currentCreation.value.ascendancy = option
@@ -143,7 +169,7 @@ export const useCharacterCreationStore = defineStore(STORE_NAME, () => {
             currentCreation.value.name = option
         }
         else if(currentCreation.value.class === null) {
-            currentCreation.value.class = option
+            currentCreation.value.charClass = option
         }
         else if(currentCreation.value.feat === null) {
             currentCreation.value.feat = option
@@ -175,6 +201,6 @@ export const useCharacterCreationStore = defineStore(STORE_NAME, () => {
         return answersArray
     }
 
-return { currentCreation, getCurrentQuestion, getCurrentStep, setCurrentTrait }
+return { currentCreation, getCurrentQuestion, getCurrentStep, setCurrentTrait, resetCreation }
 
 })

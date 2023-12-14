@@ -5,7 +5,7 @@ const STORE_NAME = 'characters'
 const STORE_LOCAL_STORAGE_KEY = 'characters'
 const getCurrentState = () => {
     const localData = localStorage.getItem(STORE_LOCAL_STORAGE_KEY)
-    return localData ? JSON.parse(localData): [{
+    return [... localData] ? JSON.parse(localData): [{
         id: 1,
         name: "Océane",
         race: "Halfeline",

@@ -14,28 +14,28 @@ export default {
 
   <ul class="mb-2">
     <li>
-      Votre ascendance : {{ currentCreation.ascendancy }}
+      Ascendance : {{ currentCreation.ascendancy }}
     </li>
     <li>
-      Votre nom : {{ currentCreation.name }}
+      Nom : {{ currentCreation.name }}
     </li>
     <li>
-      Votre voie : {{ currentCreation.class }}
+      Voie : {{ currentCreation.class }}
     </li>
     <li>
-      Votre capacité spéciale : {{ currentCreation.feat }}
+      Capacité spéciale : {{ currentCreation.feat }}
     </li>
     <li>
-      Votre arme : {{ currentCreation.weapon }}
+      Arme : {{ currentCreation.weapon }}
     </li>
     <li>
-      Votre histoire : {{ currentCreation.background }}
+      Historique : {{ currentCreation.background }}
     </li>
     <li>
-      Votre plus grand défaut : {{ currentCreation.flaw }}
+      Défaut : {{ currentCreation.flaw }}
     </li>
     <li>
-      Votre babiole : {{ currentCreation.trinket }}
+      Babiole : {{ currentCreation.trinket }}
     </li>
   </ul>
 </template>

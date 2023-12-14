@@ -1,4 +1,12 @@
 <script setup>
+import { useCharactersStore, useCharacterCreationStore } from '@/stores';
+const characStore = useCharactersStore()
+const creationStore = useCharacterCreationStore()
+
+function confirmCharac() {
+    characStore.addCharacter(creationStore.currentCreation)
+    creationStore.resetCreation()
+}
 
 const props = defineProps({
     currentQuestion: {
@@ -22,12 +30,20 @@ function confirmChoice(option) {
                 <h2 class="text-center">
                     {{ currentQuestion.question }}
                 </h2>
-                <form class="d-flex flex-column justify-content-center align-items-center">
-                    <div class="mt-3 w-100" v-for="(option, index) in currentQuestion.options.value" :key="index" @click.prevent="confirmChoice(option)">
-                        <input type="radio" class="btn-check" name="options" :id="`btn-check-${index+1}`" >
-                        <label class="btn btn-primary btn-option" :for="`btn-check-${index+1}`">{{ option }}</label>
+                <section>
+                    <form class="d-flex flex-column justify-content-center align-items-center" v-if="currentQuestion.options">
+                        <div class="mt-3 w-100" v-for="(option, index) in currentQuestion.options.value" :key="index" @click.prevent="confirmChoice(option)">
+                            <input type="radio" class="btn-check" name="options" :id="`btn-check-${index+1}`" >
+                            <label class="btn btn-primary btn-option" :for="`btn-check-${index+1}`">{{ option }}</label>
+                        </div>
+                    </form>
+                    <div v-else>
+                        <ul>
+                            <li v-for="item in currentQuestion.list.value">{{ item.stat }} : {{ item.value }}</li>
+                        </ul>
+                        <button class="btn btn-primary btn-option mt-2" @click="confirmCharac">Créer le personnage</button>
                     </div>
-                </form>
+                </section>
             </div>
         </div>
     </section>

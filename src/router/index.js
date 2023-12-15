@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import CharactersSection from '@/views/CharactersSection.vue'
 import DungeonsSection from '@/views/DungeonsSection.vue'
 import HomePage from '@/views/HomePage.vue'
-import CharacterDetails from '@/views/CharacterDetails.vue'
+import CharacterDetails from '@/views/CharacterDetailsPage.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),

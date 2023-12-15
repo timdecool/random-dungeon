@@ -32,8 +32,11 @@
         </div>
       </div>
     </div>
+    
     <div class="preview">
+      <img src="../assets/img/web/logo-tor.png" class="logo-tor" alt="">
       <div class="lead">
+        
         <router-link
           to="/characters/creation"
           class="btn-home btn btn-lg btn-secondary d-flex justify-content-center"

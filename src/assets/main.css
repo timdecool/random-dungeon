@@ -77,6 +77,20 @@ h1 {
   margin-bottom: 55px;
 }
 
+.logo-tor {
+  height: 150px;
+  width: auto;
+  position: relative;
+  bottom: 160px;
+  transition:
+    height 0.4s,
+    transform 2s ease-out 0.5s;
+    &:hover{
+      height: 200px;
+      transform: rotate(180deg);
+    }
+}
+
 .btn {
   text-align: center; /* Center the text inside the button */
   background-color: #3b3742;

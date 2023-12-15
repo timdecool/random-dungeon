@@ -38,12 +38,11 @@ export const useCharacterCreationStore = defineStore(STORE_NAME, () => {
         return curStep
     })
 
-
     const getCurrentQuestion = computed(() => {
         let currentQuestion = { question: null, options: null }
         if(currentCreation.value.ascendancy === null) {
             currentQuestion.question = "Quelle est ton ascendance ?"
-            currentQuestion.options  = getAscendancies      
+            currentQuestion.options  = getAscendancies
         }
         else if(currentCreation.value.name === null) {
             currentQuestion.question = "Comment t'appelles-tu ?"
@@ -154,7 +153,7 @@ export const useCharacterCreationStore = defineStore(STORE_NAME, () => {
         currentCreation.value = {
             ascendancy: null,
             name: null,
-            class: null,
+            charClass: null,
             feat: null,
             weapon: null,
             background: null,

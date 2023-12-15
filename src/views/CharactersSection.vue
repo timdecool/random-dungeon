@@ -21,9 +21,6 @@
             CreationView,
             GalleryView
         },
-        mounted() {
-            console.log(this.characters)
-        },
         data() {
             return {
                 creationViewActivated : true

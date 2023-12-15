@@ -16,10 +16,6 @@ const props = defineProps({
     required: true
   }
 })
-
-function handleConfirm(option) {
-  charCreationStore.setCurrentTrait(option)
-}
 </script>
 
 <template>
@@ -33,7 +29,6 @@ function handleConfirm(option) {
       <progress-bar />
       <creation-options
         :currentQuestion="charCreationStore.getCurrentQuestion"
-        @confirm="handleConfirm"
       />
     </section>
   </div>

@@ -1,8 +1,11 @@
 <script setup>
-import { ref, computed } from 'vue'
+import { ref } from 'vue'
 
 import CardItem from '@/components/Layout/CardItem.vue'
 import GalleryFilters from '@/components/Content/GalleryFilters.vue'
+
+import { useCharactersStore } from '@/stores';
+const charStore = useCharactersStore()
 
 const props = defineProps({
     dataArr: {
@@ -18,27 +21,21 @@ const props = defineProps({
     }
 })
 
-const classArr = ref(null)
 const levels = ref(null)
-
-function handleClassFilter(arr) {
-    classArr.value = arr.value
-}
-
 function handleLevelFilter(levelRange) {
     levels.value = levelRange
 }
 
-const charactersFiltered = computed(() => {
-    let dataFiltered = props.dataArr
-    if(classArr.value !== null) {
-        dataFiltered = dataFiltered.filter((item) => classArr.value.includes(item.charClass))
-    }
-    if(levels.value !== null) {
-        dataFiltered = dataFiltered.filter((item) => item.lvl >= levels.value.min && item.lvl <= levels.value.max)
-    }
-    return dataFiltered
-})
+// const charactersFiltered = computed(() => {
+//     let dataFiltered = props.dataArr
+//     if(classArr.value !== null) {
+//         dataFiltered = dataFiltered.filter((item) => classArr.value.includes(item.charClass))
+//     }
+//     if(levels.value !== null) {
+//         dataFiltered = dataFiltered.filter((item) => item.lvl >= levels.value.min && item.lvl <= levels.value.max)
+//     }
+//     return dataFiltered
+// })
 </script>
 
 <template>
@@ -48,9 +45,9 @@ const charactersFiltered = computed(() => {
         <gallery-filters :mode="mode" @updateClassFilter="handleClassFilter" @updateLevelFilter="handleLevelFilter"/>
         <router-link to="/characters/creation" class="btn btn-primary btn-card">Créer un nouveau personnage</router-link>
     </section>
-
-    <section class="d-flex row mb-5"> 
-        <template v-for="item in charactersFiltered" :key="item.id">
+    
+    <section class="d-flex row mb-5">
+        <template v-for="item in charStore.getCharacters" :key="item.id">
             <div class="mb-3 col-3">
                 <card-item :item="item" :mode="mode"/>
             </div>

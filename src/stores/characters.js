@@ -5,31 +5,61 @@ const STORE_NAME = 'characters'
 const STORE_LOCAL_STORAGE_KEY = 'characters'
 const getCurrentState = () => {
     const localData = localStorage.getItem(STORE_LOCAL_STORAGE_KEY)
-    console.log(localData)
-    return localData ? JSON.parse(localData): []}
+    return localData ? JSON.parse(localData): [
+        {
+            id:1,
+            name: "Océane",
+            charClass:"Rôdeur",
+            ascendancy: "Halfelin",
+            lvl: 3
+        },
+        {
+            id:2,
+            name: "Roman",
+            charClass:"Magicien",
+            ascendancy: "Humain",
+            lvl: 1
+        },
+        {
+            id:3,
+            name: "Tim",
+            charClass:"Prêtre",
+            ascendancy: "Aarakocra",
+            lvl: 2
+        }
+    ]}
 
 export const useCharactersStore = defineStore(STORE_NAME, () => {
-    // STATES
+    // CHARACTERS ARRAY
     const characters = ref(getCurrentState())
-    
 
-    // GETTERS
-    const getCharacters = computed(() => {
-        const localCharacters = localStorage.getItem(STORE_LOCAL_STORAGE_KEY) ? localStorage.getItem(STORE_LOCAL_STORAGE_KEY) : []
-        
-    })
-
-    const getAvailableClasses = computed(() => {
-        let classes = characters.value.map(({charClass}) => charClass)
-        return [... new Set(classes)]
-    })
-
+    // GET FILTERS INITIAL STATS
     const getLevelRange = computed(() => {
         let levels = characters.value.map(({lvl}) => lvl)
         return { max: Math.max(...levels), min: Math.min(...levels) }
     })
+    const maxLevel = ref(getLevelRange.value.max)
+    const minLevel = ref(getLevelRange.value.min)
+    
+    const getAvailableClasses = computed(() => {
+        let classes = characters.value.filter((item) => item.lvl <= maxLevel.value && item.lvl >= minLevel.value).map(({charClass}) => charClass)
+        return [... new Set(classes)]
+    })
+    const classesToDisplay = ref(getAvailableClasses.value)
+    // UPDATE FILTERS
+    function updateDisplay(newClasses, minLvl, maxLvl) {
+        classesToDisplay.value = newClasses
+        maxLevel.value = maxLvl
+        minLevel.value = minLvl 
+    }
 
-
+    // GET FILTERED CHARACTERS
+    const getCharacters = computed(() => {
+        const allCharacters = characters.value
+        let filteredCharacters = allCharacters.filter((item) => classesToDisplay.value.includes(item.charClass))
+        filteredCharacters = filteredCharacters.filter((item) => item.lvl <= maxLevel.value && item.lvl >= minLevel.value)
+        return filteredCharacters
+    })
 
     // ACTIONS
     function addCharacter(item) {
@@ -61,5 +91,5 @@ export const useCharactersStore = defineStore(STORE_NAME, () => {
         localStorage.setItem(STORE_LOCAL_STORAGE_KEY, JSON.stringify(characters))
     }
     
-return { characters, getCharacters, getAvailableClasses, getLevelRange, addCharacter, removeCharacter, updateCharacter }
+return { characters, getCharacters, getAvailableClasses, getLevelRange, addCharacter, removeCharacter, updateCharacter, updateDisplay, classesToDisplay }
 })

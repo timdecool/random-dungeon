@@ -18,15 +18,12 @@ function confirmCharac() {
     router.push({ path: '/characters/gallery'})
 }
 
-const emit = defineEmits(['confirm'])
 function confirmChoice(option) {
-    emit('confirm', option)
+    creationStore.setCurrentTrait(option)
     if(creationStore.getCurrentQuestion.question === "Fini") {
         confirmCharac()
     }
 }
-
-
 </script>
 
 <template>

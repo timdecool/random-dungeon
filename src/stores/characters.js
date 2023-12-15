@@ -11,11 +11,12 @@ const getCurrentState = () => {
 export const useCharactersStore = defineStore(STORE_NAME, () => {
     // STATES
     const characters = ref(getCurrentState())
+    
 
     // GETTERS
     const getCharacters = computed(() => {
-        const localCharacters = localStorage.getItem(STORE_LOCAL_STORAGE_KEY)
-        return localCharacters ? JSON.parse(localCharacters) : []
+        const localCharacters = localStorage.getItem(STORE_LOCAL_STORAGE_KEY) ? localStorage.getItem(STORE_LOCAL_STORAGE_KEY) : []
+        
     })
 
     const getAvailableClasses = computed(() => {
@@ -28,9 +29,14 @@ export const useCharactersStore = defineStore(STORE_NAME, () => {
         return { max: Math.max(...levels), min: Math.min(...levels) }
     })
 
+
+
     // ACTIONS
     function addCharacter(item) {
         item.id = Math.floor(Math.random() * Date.now())
+        item.lvl = 1
+        item.gold = 0
+        item.xp = 0
         characters.value.push(item)
         localStorage.setItem(STORE_LOCAL_STORAGE_KEY, JSON.stringify(characters.value))
     }

@@ -1,5 +1,5 @@
 <script setup>
-import { ref, computed, onMounted } from 'vue'
+import { ref, computed } from 'vue'
 
 import CardItem from '@/components/Layout/CardItem.vue'
 import GalleryFilters from '@/components/Content/GalleryFilters.vue'
@@ -26,9 +26,7 @@ function handleClassFilter(arr) {
 }
 
 function handleLevelFilter(levelRange) {
-    console.log("input", levelRange)
     levels.value = levelRange
-    console.log("output", levels.value, levels.value.min, levels.value.max)
 }
 
 const charactersFiltered = computed(() => {
@@ -40,10 +38,6 @@ const charactersFiltered = computed(() => {
         dataFiltered = dataFiltered.filter((item) => item.lvl >= levels.value.min && item.lvl <= levels.value.max)
     }
     return dataFiltered
-})
-
-onMounted(() => {
-    console.log(props.dataArr)
 })
 </script>
 

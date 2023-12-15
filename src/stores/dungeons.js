@@ -12,7 +12,6 @@ export const useDungeonsStore = defineStore(STORE_NAME, () => {
     // STATES
     const dungeons = ref(getCurrentState())
 
-
     // GETTERS
     const getDungeons = computed(() => {
         const localDungeons = localStorage.getItem(STORE_LOCAL_STORAGE_KEY)

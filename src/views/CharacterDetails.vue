@@ -3,9 +3,5 @@
 </script>
 
 <template>
-    <h2>
-        Détails 
-    </h2>
-
-    
+    <h1>Coucou</h1>    
 </template>

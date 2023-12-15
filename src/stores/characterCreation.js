@@ -9,7 +9,8 @@ const STORE_LOCAL_STORAGE_KEY = 'characterCreation'
 
 const getCurrentState = () => {
     const localData = localStorage.getItem(STORE_LOCAL_STORAGE_KEY)
-    return localData ? JSON.parse(localData): charactersJSON }
+    return localData ? JSON.parse(localData): charactersJSON 
+}
 
 export const useCharacterCreationStore = defineStore(STORE_NAME, () => {
     // STATES

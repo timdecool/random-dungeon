@@ -76,6 +76,9 @@ export const useCharacterCreationStore = defineStore(STORE_NAME, () => {
             currentQuestion.question = "Voici tes caractéristiques. Bonne chance."
             currentQuestion.list = getStats
         }
+        else {
+            currentQuestion.question = "Fini"
+        }
         return currentQuestion
     })
 

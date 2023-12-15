@@ -4,7 +4,6 @@ const charStore = useCharactersStore()
 </script>
 
 <template>
-  <pre>{{ charStore.characters }}</pre>
    <h1> Accueil</h1>
   <main class="inner cover" role="main">
     <h3 class="cover-heading">TOR world's</h3>

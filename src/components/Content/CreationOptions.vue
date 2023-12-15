@@ -1,4 +1,5 @@
 <script setup>
+import router from '@/router';
 import { useCharactersStore, useCharacterCreationStore } from '@/stores';
 const characStore = useCharactersStore()
 const creationStore = useCharacterCreationStore()
@@ -14,11 +15,15 @@ const props = defineProps({
 function confirmCharac() {
     characStore.addCharacter(creationStore.currentCreation)
     creationStore.resetCreation()
+    router.push({ path: '/characters/gallery'})
 }
 
 const emit = defineEmits(['confirm'])
 function confirmChoice(option) {
     emit('confirm', option)
+    if(creationStore.getCurrentQuestion.question === "Fini") {
+        confirmCharac()
+    }
 }
 
 
@@ -42,7 +47,7 @@ function confirmChoice(option) {
                         <ul>
                             <li v-for="item in currentQuestion.list.value">{{ item.stat }} : {{ item.value }}</li>
                         </ul>
-                        <button class="btn btn-primary btn-option mt-2" @click="confirmChoice()">Créer le personnage</button>
+                        <button class="btn btn-primary btn-option mt-2" @click="confirmChoice(currentQuestion.list.value)">Créer le personnage</button>
                     </div>
                 </section>
             </div>

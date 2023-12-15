@@ -1,5 +1,5 @@
 <script setup>
-import { ref, computed } from 'vue'
+import { ref, computed, onMounted } from 'vue'
 
 import CardItem from '@/components/Layout/CardItem.vue'
 import GalleryFilters from '@/components/Content/GalleryFilters.vue'
@@ -7,7 +7,10 @@ import GalleryFilters from '@/components/Content/GalleryFilters.vue'
 const props = defineProps({
     dataArr: {
         type: Array,
-        required: true
+        required: true,
+        default: function () {
+            return null
+        }
     },
     mode: {
         type: String,
@@ -37,6 +40,10 @@ const charactersFiltered = computed(() => {
         dataFiltered = dataFiltered.filter((item) => item.lvl >= levels.value.min && item.lvl <= levels.value.max)
     }
     return dataFiltered
+})
+
+onMounted(() => {
+    console.log(props.dataArr)
 })
 </script>
 

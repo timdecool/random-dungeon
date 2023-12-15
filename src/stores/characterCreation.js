@@ -1,7 +1,7 @@
 // IMPORTS
 import { ref, computed } from 'vue'
 import { defineStore } from 'pinia'
-import characters from '@/data/characters.json'
+import charactersJSON from '@/data/characters.json'
 
 // KEYS
 const STORE_NAME = 'characterCreation'
@@ -9,7 +9,7 @@ const STORE_LOCAL_STORAGE_KEY = 'characterCreation'
 
 const getCurrentState = () => {
     const localData = localStorage.getItem(STORE_LOCAL_STORAGE_KEY)
-    return localData ? JSON.parse(localData): characters }
+    return localData ? JSON.parse(localData): charactersJSON }
 
 export const useCharacterCreationStore = defineStore(STORE_NAME, () => {
     // STATES
@@ -48,7 +48,7 @@ export const useCharacterCreationStore = defineStore(STORE_NAME, () => {
             currentQuestion.question = "Comment t'appelles-tu ?"
             currentQuestion.options = getNames
         }
-        else if(currentCreation.value.class === null ) {
+        else if(currentCreation.value.charClass === null ) {
             currentQuestion.question = "Quelle est ta voie ?"
             currentQuestion.options = getClasses
         }
@@ -115,7 +115,7 @@ export const useCharacterCreationStore = defineStore(STORE_NAME, () => {
     const getFeats = computed(() => {
         let feats=[]
         if(currentCreation.value.ascendancy !== null) {
-            const heroClass = characterOptions.value.classes.find((el) => el.name === currentCreation.value.class)
+            const heroClass = characterOptions.value.classes.find((el) => el.name === currentCreation.value.charClass)
             feats = getRandomOptions(heroClass.feats)
         }
         return feats
@@ -124,7 +124,7 @@ export const useCharacterCreationStore = defineStore(STORE_NAME, () => {
     const getWeapons = computed(() => {
         let weapons=[]
         if(currentCreation.value.ascendancy !== null) {
-            const heroClass = characterOptions.value.classes.find((el) => el.name === currentCreation.value.class)
+            const heroClass = characterOptions.value.classes.find((el) => el.name === currentCreation.value.charClass)
             weapons = getRandomOptions(heroClass.weapons)
         }
         return weapons
@@ -168,7 +168,7 @@ export const useCharacterCreationStore = defineStore(STORE_NAME, () => {
         else if(currentCreation.value.name === null) {
             currentCreation.value.name = option
         }
-        else if(currentCreation.value.class === null) {
+        else if(currentCreation.value.charClass === null) {
             currentCreation.value.charClass = option
         }
         else if(currentCreation.value.feat === null) {
@@ -185,6 +185,9 @@ export const useCharacterCreationStore = defineStore(STORE_NAME, () => {
         }
         else if(currentCreation.value.trinket === null) {
             currentCreation.value.trinket = option
+        }
+        else if(currentCreation.value.attributes === null) {
+            currentCreation.value.attributes = option
         }
     }
 

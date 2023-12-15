@@ -20,7 +20,7 @@ export default {
       Nom : {{ currentCreation.name }}
     </li>
     <li>
-      Voie : {{ currentCreation.class }}
+      Voie : {{ currentCreation.charClass }}
     </li>
     <li>
       Capacité spéciale : {{ currentCreation.feat }}

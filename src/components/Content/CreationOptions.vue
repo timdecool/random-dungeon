@@ -3,10 +3,6 @@ import { useCharactersStore, useCharacterCreationStore } from '@/stores';
 const characStore = useCharactersStore()
 const creationStore = useCharacterCreationStore()
 
-function confirmCharac() {
-    characStore.addCharacter(creationStore.currentCreation)
-    creationStore.resetCreation()
-}
 
 const props = defineProps({
     currentQuestion: {
@@ -14,6 +10,11 @@ const props = defineProps({
         required: true
     }
 })
+
+function confirmCharac() {
+    characStore.addCharacter(creationStore.currentCreation)
+    creationStore.resetCreation()
+}
 
 const emit = defineEmits(['confirm'])
 function confirmChoice(option) {
@@ -41,7 +42,7 @@ function confirmChoice(option) {
                         <ul>
                             <li v-for="item in currentQuestion.list.value">{{ item.stat }} : {{ item.value }}</li>
                         </ul>
-                        <button class="btn btn-primary btn-option mt-2" @click="confirmCharac">Créer le personnage</button>
+                        <button class="btn btn-primary btn-option mt-2" @click="confirmChoice()">Créer le personnage</button>
                     </div>
                 </section>
             </div>

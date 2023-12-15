@@ -5,83 +5,8 @@ const STORE_NAME = 'characters'
 const STORE_LOCAL_STORAGE_KEY = 'characters'
 const getCurrentState = () => {
     const localData = localStorage.getItem(STORE_LOCAL_STORAGE_KEY)
-    return [... localData] ? JSON.parse(localData): [{
-        id: 1,
-        name: "Océane",
-        race: "Halfeline",
-        charClass: "Illusionniste",
-        background: "Enfant des rues",
-        bauble: "Vieille photo de BTS",
-        lvl: 5,
-        inventory: [],
-        gold: 0
-    },
-    {
-        id: 2,
-        name: "Roman",
-        race: "Humain",
-        charClass: "Paladin",
-        background: "Sans histoire",
-        bauble: "Peluche d'éléphant hélas trop chère",
-        lvl: 6,
-        inventory: [],
-        gold: 0,
-    },
-    {
-        id: 3,
-        name: "Océane",
-        race: "Halfeline",
-        charClass: "Illusionniste",
-        background: "Enfant des rues",
-        bauble: "Vieille photo de BTS",
-        lvl: 2
-    },
-    {
-        id: 4,
-        name: "Roman",
-        race: "Humain",
-        charClass: "Paladin",
-        background: "Sans histoire",
-        bauble: "Peluche d'éléphant hélas trop chère",
-        lvl: 3
-    },
-    {
-        id: 5,
-        name: "Océane",
-        race: "Halfeline",
-        charClass: "Druide",
-        background: "Enfant des rues",
-        bauble: "Vieille photo de BTS",
-        lvl: 4
-    },
-    {
-        id: 6,
-        name: "Roman",
-        race: "Humain",
-        charClass: "Barde",
-        background: "Sans histoire",
-        bauble: "Peluche d'éléphant hélas trop chère",
-        lvl: 2
-    },
-    {
-        id: 7,
-        name: "Océane",
-        race: "Halfeline",
-        charClass: "Prêtre",
-        background: "Enfant des rues",
-        bauble: "Vieille photo de BTS",
-        lvl: 1
-    },
-    {
-        id: 8,
-        name: "Roman",
-        race: "Humain",
-        charClass: "Guerrier",
-        background: "Sans histoire",
-        bauble: "Peluche d'éléphant hélas trop chère",
-        lvl: 1
-    }
-]}
+    console.log(localData)
+    return localData ? JSON.parse(localData): []}
 
 export const useCharactersStore = defineStore(STORE_NAME, () => {
     // STATES
@@ -105,8 +30,9 @@ export const useCharactersStore = defineStore(STORE_NAME, () => {
 
     // ACTIONS
     function addCharacter(item) {
+        item.id = Math.floor(Math.random() * Date.now())
         characters.value.push(item)
-        localStorage.setItem(STORE_LOCAL_STORAGE_KEY, JSON.stringify(characters))
+        localStorage.setItem(STORE_LOCAL_STORAGE_KEY, JSON.stringify(characters.value))
     }
 
     function updateCharacter(item) {

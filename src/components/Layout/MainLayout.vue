@@ -4,22 +4,22 @@
         name: "MainLayout",
         props: {
             headerClass : {
-                type: Array,
-                required: true,
+                type: String,
+                required: false,
                 default: function() {
                     return null
                 }
             },
             bodyClass : {
-                type: Array,
-                required: true,
+                type: String,
+                required: false,
                 default: function() {
                     return null
                 }
             },
             footerClass : {
-                type: Array,
-                required: true,
+                type: String,
+                required: false,
                 default: function() {
                     return null
                 }

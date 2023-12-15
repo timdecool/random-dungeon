@@ -1,7 +1,7 @@
 <script>
     // Tools
     import { useCharactersStore } from '@/stores'
-    import { mapActions, mapState, mapGetters } from 'pinia'
+    import { mapState } from 'pinia'
 
     // Views
     import CreationView from '@/components/Content/CreationView.vue'
@@ -20,6 +20,9 @@
         components : {
             CreationView,
             GalleryView
+        },
+        mounted() {
+            console.log(this.characters)
         },
         data() {
             return {

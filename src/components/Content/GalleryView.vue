@@ -1,6 +1,4 @@
 <script setup>
-import { ref } from 'vue'
-
 import CardItem from '@/components/Layout/CardItem.vue'
 import GalleryFilters from '@/components/Content/GalleryFilters.vue'
 
@@ -21,28 +19,14 @@ const props = defineProps({
     }
 })
 
-const levels = ref(null)
-function handleLevelFilter(levelRange) {
-    levels.value = levelRange
-}
 
-// const charactersFiltered = computed(() => {
-//     let dataFiltered = props.dataArr
-//     if(classArr.value !== null) {
-//         dataFiltered = dataFiltered.filter((item) => classArr.value.includes(item.charClass))
-//     }
-//     if(levels.value !== null) {
-//         dataFiltered = dataFiltered.filter((item) => item.lvl >= levels.value.min && item.lvl <= levels.value.max)
-//     }
-//     return dataFiltered
-// })
 </script>
 
 <template>
     <h2 class="text-center mb-3">Galerie de vos {{ mode === "characters" ? "personnages":"donjons" }}</h2>
 
     <section class="filters d-flex justify-content-between p-2 mb-3 align-items-end">
-        <gallery-filters :mode="mode" @updateClassFilter="handleClassFilter" @updateLevelFilter="handleLevelFilter"/>
+        <gallery-filters :mode="mode"/>
         <router-link to="/characters/creation" class="btn btn-primary btn-card">Créer un nouveau personnage</router-link>
     </section>
     
@@ -52,6 +36,7 @@ function handleLevelFilter(levelRange) {
                 <card-item :item="item" :mode="mode"/>
             </div>
         </template>
+        <pre>{{ charStore.characters }}</pre>
     </section>
 </template>
 

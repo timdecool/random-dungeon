@@ -1,5 +1,5 @@
 <script setup>
-import { computed, ref } from 'vue'
+import { onUpdated, ref } from 'vue'
 
 // AVAILABLE CLASSES
 import {useCharactersStore} from '@/stores'

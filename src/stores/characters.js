@@ -56,6 +56,7 @@ export const useCharactersStore = defineStore(STORE_NAME, () => {
     // GET FILTERED CHARACTERS
     const getCharacters = computed(() => {
         const allCharacters = characters.value
+        console.log(allCharacters)
         let filteredCharacters = allCharacters.filter((item) => classesToDisplay.value.includes(item.charClass))
         filteredCharacters = filteredCharacters.filter((item) => item.lvl <= maxLevel.value && item.lvl >= minLevel.value)
         return filteredCharacters
